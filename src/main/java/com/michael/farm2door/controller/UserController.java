@@ -1,6 +1,7 @@
 package com.michael.farm2door.controller;
 
 
+import com.michael.farm2door.model.DTOs.FullnameDTO;
 import com.michael.farm2door.model.DTOs.LoginDTO;
 import com.michael.farm2door.model.manufacturer.Seller;
 import com.michael.farm2door.model.user.User;
@@ -33,5 +34,10 @@ public class UserController {
         return new ResponseEntity<>(userService.singleUser(userId),HttpStatus.OK);
     }
 
+    @PutMapping("/user/updateName/{userId}")
+    protected ResponseEntity<User> updateuserName(@PathVariable String userId, @RequestBody FullnameDTO fullnameDTO){
+        String name = fullnameDTO.getName();
+        return new ResponseEntity<>(userService.updateName(userId,name),HttpStatus.OK);
+    }
 
 }

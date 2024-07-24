@@ -1,7 +1,9 @@
 package com.michael.farm2door.service;
 
 import com.michael.farm2door.model.manufacturer.Seller;
+import com.michael.farm2door.model.product.Product;
 import com.michael.farm2door.model.user.User;
+import com.michael.farm2door.repository.ProductRepo;
 import com.michael.farm2door.repository.SellerRepo;
 import com.michael.farm2door.repository.UserRepo;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -9,6 +11,10 @@ import org.springframework.http.HttpStatus;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.web.server.ResponseStatusException;
+
+import java.util.List;
+import java.util.UUID;
+
 @Service
 public class SellerService {
 
@@ -17,6 +23,9 @@ public class SellerService {
 
     @Autowired
     PasswordEncoder passwordEncoder;
+
+    @Autowired
+    ProductRepo productRepo;
 
 
     public Seller singleSeller(String userId) {
@@ -43,5 +52,26 @@ public class SellerService {
     public Seller registerSeller(Seller seller){
 
         return userRepo.save(seller);
+    }
+
+
+//  --------------------  products
+
+
+    public Product createProduct(String sellerId, Product product){
+        Product productEntity = productRepo.save(product);
+        Seller seller = singleSeller(sellerId);
+        seller.getProductList().add(productEntity);
+        Seller updatedSeller = userRepo.save(seller);
+        return productEntity;
+    }
+
+    public List<Product> getAllProductsForSeller(String sellerId){
+        Seller seller = singleSeller(sellerId);
+        return seller.getProductList();
+    }
+
+    public List<Product> getAllProducts(){
+       return productRepo.findAll();
     }
 }

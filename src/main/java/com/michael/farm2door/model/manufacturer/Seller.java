@@ -1,8 +1,12 @@
 package com.michael.farm2door.model.manufacturer;
 
+import com.michael.farm2door.model.product.Product;
 import lombok.Data;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
+
+import java.util.List;
+
 @Data
 @Document
 public class Seller {
@@ -15,4 +19,5 @@ public class Seller {
     private String backgroundProfileImageUrl;
     private String password;
     private String typeOfProduct;
+    private List<Product> productList;
 }

@@ -1,11 +1,15 @@
 C:\Users\Michael\Downloads\farm2door\src\main\java\com\michael\farm2door\configurations\CloudinaryConfig.java
 C:\Users\Michael\Downloads\farm2door\src\main\java\com\michael\farm2door\configurations\SecurityConfig.java
+C:\Users\Michael\Downloads\farm2door\src\main\java\com\michael\farm2door\controller\ProductController.java
 C:\Users\Michael\Downloads\farm2door\src\main\java\com\michael\farm2door\controller\Sellercontroller.java
 C:\Users\Michael\Downloads\farm2door\src\main\java\com\michael\farm2door\controller\UserController.java
 C:\Users\Michael\Downloads\farm2door\src\main\java\com\michael\farm2door\Farm2doorApplication.java
+C:\Users\Michael\Downloads\farm2door\src\main\java\com\michael\farm2door\model\DTOs\FullnameDTO.java
 C:\Users\Michael\Downloads\farm2door\src\main\java\com\michael\farm2door\model\DTOs\LoginDTO.java
 C:\Users\Michael\Downloads\farm2door\src\main\java\com\michael\farm2door\model\manufacturer\Seller.java
+C:\Users\Michael\Downloads\farm2door\src\main\java\com\michael\farm2door\model\product\Product.java
 C:\Users\Michael\Downloads\farm2door\src\main\java\com\michael\farm2door\model\user\User.java
+C:\Users\Michael\Downloads\farm2door\src\main\java\com\michael\farm2door\repository\ProductRepo.java
 C:\Users\Michael\Downloads\farm2door\src\main\java\com\michael\farm2door\repository\SellerRepo.java
 C:\Users\Michael\Downloads\farm2door\src\main\java\com\michael\farm2door\repository\UserRepo.java
 C:\Users\Michael\Downloads\farm2door\src\main\java\com\michael\farm2door\service\SellerService.java

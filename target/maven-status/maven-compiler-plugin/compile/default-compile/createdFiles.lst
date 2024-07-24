@@ -1,0 +1,8 @@
+com\michael\farm2door\repository\SellerRepo.class
+com\michael\farm2door\Farm2doorApplication.class
+com\michael\farm2door\configurations\CloudinaryConfig.class
+com\michael\farm2door\repository\UserRepo.class
+com\michael\farm2door\service\UserService.class
+com\michael\farm2door\configurations\SecurityConfig.class
+com\michael\farm2door\model\manufacturer\Seller.class
+com\michael\farm2door\model\user\User.class

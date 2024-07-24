@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.michael.farm2door.Farm2doorApplicationTests
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 10.01 s -- in com.michael.farm2door.Farm2doorApplicationTests
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 173.6 s -- in com.michael.farm2door.Farm2doorApplicationTests

@@ -40,5 +40,9 @@ public class UserService {
         }
     }
 
+    public User registerUser(User user){
+        return userRepo.save(user);
+    }
+
 
 }

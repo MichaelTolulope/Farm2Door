@@ -10,6 +10,7 @@ public class Seller {
     private String id;
     private String businessName;
     private String businessFounder;
+    private String email;
     private String profileImageUrl;
     private String backgroundProfileImageUrl;
     private String password;
